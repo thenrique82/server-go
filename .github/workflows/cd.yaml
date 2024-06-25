@@ -15,6 +15,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           username: thenrique
-          password: ${{ secrets.DOCKER.PASSWORD }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
           repository: thenrique/server-go
           tags: ${{ github.sha }}, latest
