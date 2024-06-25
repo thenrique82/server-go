@@ -21,4 +21,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ${{ github.sha }}, latest
+          tags: thenrique/server-go:${{ github.sha }}, thenrique/server-go:latest
